@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self';">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samiul Tasab Sakhawat — Developer Portfolio. HTML, CSS, C, Python.">
-    <meta name="author" content="Samiul Tasab Sakhawat">
-    <meta name="theme-color" content="#0a0a0f">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Samiul Tasab Sakhawat — Developer Portfolio. HTML, CSS, C, Python." />
+    <meta name="author" content="Samiul Tasab Sakhawat" />
+    <meta name="theme-color" content="#0a0a0f" />
     <title>Samiul Tasab Sakhawat | Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for real brand logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -44,9 +45,10 @@
             <h1>Hi, I'm <span class="highlight">Samiul Tasab Sakhawat</span></h1>
             <p class="tagline">Developer • Programmer • Tech Enthusiast</p>
             <p><span class="typing-text" id="typingText"></span></p>
-            <div class="btn-group" style="margin-top:1.5rem;">
+            <div class="btn-group hero-btns">
                 <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
                 <a href="#contact" class="btn btn-outline">📬 Get in Touch</a>
+                <a href="#" class="btn btn-outline cv-btn">📄 Download CV</a>
             </div>
         </div>
     </section>
@@ -78,25 +80,25 @@
                 <span class="skill-icon">🌐</span>
                 <h4>HTML5</h4>
                 <p>Semantic, accessible markup</p>
-                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="95"></div></div>
+                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="90"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon">🎨</span>
                 <h4>CSS3</h4>
                 <p>Responsive, animations, layouts</p>
-                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="90"></div></div>
+                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="50"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon">⚙️</span>
                 <h4>C</h4>
                 <p>Systems, algorithms, embedded</p>
-                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="80"></div></div>
+                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="70"></div></div>
             </div>
             <div class="skill-card">
                 <span class="skill-icon">🐍</span>
                 <h4>Python</h4>
                 <p>Scripting, automation, backend</p>
-                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="85"></div></div>
+                <div class="skill-bar-wrap"><div class="skill-bar-fill" data-width="80"></div></div>
             </div>
         </div>
     </section>
@@ -104,37 +106,13 @@
     <!-- Projects Section -->
     <section class="section reveal" id="projects">
         <h2 class="section-title">📁 Projects</h2>
-        <p class="section-subtitle">Some things I've built</p>
-        <div class="projects-grid">
-            <div class="card project-card">
-                <h3>🔐 SecureAuth CLI</h3>
-                <p>A Python-based CLI authentication system with hashed passwords and session logging.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>Security</span><span>CLI</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/samiul-tasab" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 GitHub</a>
-                </div>
-            </div>
-            <div class="card project-card">
-                <h3>📊 DataViz Lite</h3>
-                <p>Lightweight C program that reads CSV data and outputs ASCII charts in the terminal.</p>
-                <div class="project-tags">
-                    <span>C</span><span>Data</span><span>Terminal</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/samiul-tasab" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 GitHub</a>
-                </div>
-            </div>
-            <div class="card project-card">
-                <h3>🎯 Portfolio Site</h3>
-                <p>This very portfolio — responsive, theme-toggled, and deployed on GitHub Pages.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JS</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/samiul-tasab" target="_blank" rel="noopener" class="btn btn-outline btn-sm">🔗 GitHub</a>
-                </div>
+        <p class="section-subtitle">Things I've built</p>
+        <div class="projects-placeholder">
+            <div class="card placeholder-card">
+                <div class="placeholder-icon">🚧</div>
+                <h3>Projects Coming Soon</h3>
+                <p>I'm currently working on some exciting new projects. Check back later!</p>
+                <div class="placeholder-sub">Stay tuned for updates.</div>
             </div>
         </div>
     </section>
@@ -144,39 +122,33 @@
         <h2 class="section-title">📬 Connect With Me</h2>
         <p class="section-subtitle">Find me across the web</p>
         <div class="social-grid">
-            <a href="https://facebook.com/samiul.tasab.sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
-                <span class="s-icon">ⓕ</span> Facebook
+            <a href="https://www.facebook.com/sat.Sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
             </a>
-            <a href="https://instagram.com/samiul.tasab.sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
-                <span class="s-icon">🅾<i
-class=
-"fi fi-brands-instagram"
-></i></span> Instagram
+            <a href="https://www.instagram.com/sat.sakhawat/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
-            <a href="https://linkedin.com/in/samiul-tasab-sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-                <span class="s-icon">💼</span> LinkedIn
+            <a href="https://x.com/sat_Sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X">
+                <i class="fab fa-x-twitter"></i> X
             </a>
-            <a href="https://t.me/samiul_tasab" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Telegram">
-                <span class="s-icon">✈️</span> Telegram
+            <a href="https://www.linkedin.com/in/sat-sakhawat" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
             </a>
-            <a href="https://x.com/samiul_tasab" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X (Twitter)">
-                <span class="s-icon">🐦</span> X
+            <a href="https://www.pinterest.com/sat_sakhawat/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Pinterest">
+                <i class="fab fa-pinterest-p"></i> Pinterest
             </a>
-            <a href="https://pinterest.com/samiul_tasab" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Pinterest">
-                <span class="s-icon">📌</span> Pinterest
+            <a href="https://github.com/uncouth2folk" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://github.com/samiul-tasab" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
-                <span class="s-icon">🐙</span> GitHub
+            <a href="mailto:samiul.tasab@email.com" class="social-btn" aria-label="Email">
+                <i class="fas fa-envelope"></i> Email
             </a>
         </div>
-        <p style="text-align:center;color:var(--text-secondary);margin-top:1rem;">
-            📧 <strong>samiul.tasab@email.com</strong> &nbsp;|&nbsp; 📍 Bangladesh
-        </p>
     </section>
 
     <!-- Footer -->
     <footer class="footer reveal">
-        <p>&copy; <span id="currentYear"></span> Samiul Tasab Sakhawat. Built with 💜 &amp; vanilla code. Deployed on GitHub Pages.</p>
+        <p>&copy; <span id="currentYear"></span> Samiul Tasab Sakhawat.</p>
     </footer>
 
     <script src="script.js"></script>
